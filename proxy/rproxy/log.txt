@@ -1,0 +1,14 @@
+0      2017-09-19 14:44:43,202 INFO  [main] proxy.SelfSignedKeyStoreManager.nativeCall (SelfSignedKeyStoreManager.java:82) - Running '[keytool, -genkey, -alias, littleproxy, -keysize, 4096, -validity, 36500, -keyalg, RSA, -dname, CN=littleproxy, -keypass, Be Your Own Lantern, -storepass, Be Your Own Lantern, -keystore, littleproxy_keystore.jks]'
+5665   2017-09-19 14:44:48,867 INFO  [main] proxy.SelfSignedKeyStoreManager.nativeCall (SelfSignedKeyStoreManager.java:88) - Completed native call: '[keytool, -genkey, -alias, littleproxy, -keysize, 4096, -validity, 36500, -keyalg, RSA, -dname, CN=littleproxy, -keypass, Be Your Own Lantern, -storepass, Be Your Own Lantern, -keystore, littleproxy_keystore.jks]'
+Response: ''
+5665   2017-09-19 14:44:48,867 INFO  [main] proxy.SelfSignedKeyStoreManager.nativeCall (SelfSignedKeyStoreManager.java:82) - Running '[keytool, -exportcert, -alias, littleproxy, -keystore, littleproxy_keystore.jks, -storepass, Be Your Own Lantern, -file, littleproxy_cert]'
+5951   2017-09-19 14:44:49,153 INFO  [main] proxy.SelfSignedKeyStoreManager.nativeCall (SelfSignedKeyStoreManager.java:88) - Completed native call: '[keytool, -exportcert, -alias, littleproxy, -keystore, littleproxy_keystore.jks, -storepass, Be Your Own Lantern, -file, littleproxy_cert]'
+Response: ''
+6663   2017-09-19 14:44:49,865 INFO  [main] proxy.DefaultHttpProxyServer.start (DefaultHttpProxyServer.java:325) - Starting proxy on port: 54463
+6663   2017-09-19 14:44:49,865 DEBUG [main] proxy.HttpServerPipelineFactory.<init> (HttpServerPipelineFactory.java:97) - Creating server with keystore manager: org.littleshoot.proxy.SelfSignedKeyStoreManager@1e0a01f
+6712   2017-09-19 14:44:49,914 INFO  [main] proxy.DefaultHttpProxyServer.start (DefaultHttpProxyServer.java:325) - Starting proxy on port: 8080
+6712   2017-09-19 14:44:49,914 DEBUG [main] proxy.HttpServerPipelineFactory.<init> (HttpServerPipelineFactory.java:97) - Creating server with keystore manager: null
+6713   2017-09-19 14:44:49,915 INFO  [Thread-1] proxy.DefaultHttpProxyServer.stop (DefaultHttpProxyServer.java:374) - Shutting down proxy
+6713   2017-09-19 14:44:49,915 INFO  [Thread-1] proxy.DefaultHttpProxyServer.stop (DefaultHttpProxyServer.java:381) - Closing all channels...
+6713   2017-09-19 14:44:49,915 INFO  [Thread-1] proxy.DefaultHttpProxyServer.stop (DefaultHttpProxyServer.java:397) - Stopping timer
+6745   2017-09-19 14:44:49,947 INFO  [Thread-1] proxy.DefaultHttpProxyServer.stop (DefaultHttpProxyServer.java:402) - Done shutting down proxy
